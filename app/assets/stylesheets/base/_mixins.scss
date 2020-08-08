@@ -1,0 +1,213 @@
+@import "./config.scss";
+
+/*
+###################################################
+# Resets
+###################################################
+*/
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  & li {
+    list-style-type: none;
+  }
+}
+
+/*
+###################################################
+# Aliases
+###################################################
+*/
+
+@mixin animate($timing, $method: "") {
+  transition: all $timing $method;
+  -webkit-transition: all $timing $method;
+  -moz-transition: all $timing $method;
+}
+@mixin border($color) {
+  border: 1px dotted $color;
+}
+
+/*
+###################################################
+# Responsive
+###################################################
+*/
+
+@mixin sm-md {
+  @media screen and (min-width: 641px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin md-lg {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin lg-xl {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (min-width: 1281px) {
+    @content;
+  }
+}
+
+@mixin respond-to($point) {
+  @if map-has-key($breakpoints, $point) {
+    $value: map-get($breakpoints, $point);
+    @media screen and (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+@mixin range($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin hide-at-point($point) {
+  @if map-has-key($breakpoints, $point) {
+    $value: map-get($breakpoints, $point);
+    @media screen and (min-width: $value) {
+      display: none;
+    }
+  }
+}
+
+@mixin showBreaks {
+  background: url("/static/sm.png") left 100px no-repeat;
+  background-attachment: fixed;
+  @include sm-md {
+    background: url("/static/sm-md.png") left 100px no-repeat;
+    background-attachment: fixed;
+  }
+  @include md-lg {
+    background: url("/static/md-lg.png") left 100px no-repeat;
+    background-attachment: fixed;
+  }
+  @include lg-xl {
+    background: url("/static/lg-xl.png") left 100px no-repeat;
+    background-attachment: fixed;
+  }
+  @include xl {
+    background: url("/static/xl-up.png") left 100px no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+/*
+###################################################
+# Colors
+###################################################
+*/
+
+
+@each $name, $value in $colors {
+  .color-#{$name} {
+    color: $value;
+  }
+  .bgcolor-#{$name} {
+    background-color: $value;
+  }
+}
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+/*
+###################################################
+# Class Utilities
+###################################################
+*/
+
+
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+
+.hide-for-small {
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+    display: none !important;
+  }
+}
+.hide-for-medium {
+  @media screen and (max-width: map-get($breakpoints, md)) {
+    display: none !important;
+  }
+}
+.hide-for-large {
+  @media screen and (max-width: map-get($breakpoints, lg)) {
+    display: none !important;
+  }
+}
+.hide-for-xlarge {
+  @media screen and (max-width: map-get($breakpoints, xl)) {
+    display: none !important;
+  }
+}
+
+@each $name, $value in $sizes {
+  .margin-#{$name} {
+    margin: $value;
+  }
+  .margin-y-#{$name} {
+    margin: $value 0;
+  }
+  .margin-x-#{$name} {
+    margin: 0 $value;
+  }
+  .margin-bottom-#{$name} {
+    margin-bottom: $value;
+  }
+  .margin-top-#{$name} {
+    margin-top: $value;
+  }
+  .padding-#{$name} {
+    padding: $value;
+  }
+  .padding-y-#{$name} {
+    padding: $value 0;
+  }
+  .padding-x-#{$name} {
+    padding: 0 $value;
+  }
+  .padding-bottom-#{$name} {
+    padding-bottom: $value;
+  }
+  .padding-top-#{$name} {
+    padding-top: $value;
+  }
+  .padding-right-#{$name} {
+    padding-right: $value;
+  }
+  .padding-left-#{$name} {
+    padding-left: $value;
+  }
+}
+
+.no-pad {
+  padding: 0 !important;
+}

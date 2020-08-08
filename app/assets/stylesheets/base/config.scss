@@ -1,0 +1,35 @@
+$breakpoints: (
+  null: 0,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+$colors: (
+  "transparent": transparent,
+  "coal": #444,
+  "white": #fff,
+  "quartz": #ff613c,
+  "admiral": #3b4868,
+  "scrub": #00d6b3,
+  "sky": #3391f3,
+  "hull": #767a84,
+  "midcentury": #e7cb69,
+  "funnies": #efceb9,
+  "belaire": #b0e0e6,
+  "fog": #f1f7f8,
+  "darkfog": #dee4e5,
+  "hyperlink": #005ec0,
+  "gray": #666,
+);
+
+$sizes: (
+  xsmall: 0.5rem,
+  small: 1rem,
+  medium: 2rem,
+  large: 4rem,
+  xlarge: 6rem,
+  xxlarge: 8rem,
+  xxxlarge: 10rem,
+);

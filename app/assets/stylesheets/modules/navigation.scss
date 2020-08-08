@@ -1,0 +1,101 @@
+.banner {
+  grid-column: 1/13;
+  color: color(fog);
+  background: color(coal);
+  text-align: center;
+  font-size: 1.125rem;
+  height: 4rem;
+  line-height: 4rem;
+  z-index: 99;
+
+  a {
+    color: color(fog);
+    border: 0;
+  }
+}
+
+.navigation {
+  height: $height-navigation;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  grid-column: 1/-1;
+  z-index: 80;
+  margin: 0 3rem 0 2rem;
+}
+
+li.navigationLogo {
+  display: flex;
+  align-content: center;
+  margin-right: auto;
+  overflow: hidden;
+  
+  a {
+    border: 0 !important;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.navigation li {
+  height: $height-navigation / 2.3;
+  line-height: 2;
+  padding: 0 0.8rem;
+  color: color(coal);
+
+  a {
+    color: color(coal);
+    text-decoration: none;
+    border-bottom: 2px solid color(coal);
+  }
+  a:visited {
+    color: color(coal);
+    text-decoration: none;
+  }
+  a:active {
+    color: color(scrub);
+    text-decoration: none;
+  }
+}
+.navigation li.divider {
+  position: relative;
+  padding: 0 1rem;
+  display: block;
+  &:after {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    content: "";
+    background: color(scrub);
+  }
+}
+.navigation li.special a {
+  background: #444;
+  color: color(fog);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  border: none;
+}
+.navigation li.hamburger {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  padding-top: 2px;
+}
+.navigation li.autohide {
+  @extend .hide-for-small;
+  @extend .hide-for-medium;
+  @extend .hide-for-large;
+}
+.trigger {
+  position: fixed;
+  top: 5.78rem;
+  right: 1.75rem;
+  z-index: 9999;
+}

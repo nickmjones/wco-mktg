@@ -1,0 +1,34 @@
+@import "../base/base";
+
+.btn {
+  background: color(coal);
+  border-radius: 100px;
+  text-align: center;
+  color: color(fog);
+  font-size: 1rem;
+  line-height: 1;
+  padding: .75rem 1.25rem;
+  border: 1px solid transparent;
+  @include animate(.15s, ease-in-out);
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background: #111;
+  }
+}
+
+.btn--ghost {
+  @extend .btn;
+  background: white;
+  color: color(coal);
+  border: 1px solid color(coal);
+  &:hover {
+    background: color(fog);
+    color: color(coal);
+  }
+}
