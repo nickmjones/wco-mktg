@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'high_voltage', '~> 3.1'
 gem 'jbuilder', '~> 2.7'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
@@ -14,6 +13,7 @@ gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
 gem 'simple_form'
 gem 'webpacker', '~> 4.0'
+gem 'high_voltage'
 
 
 group :development, :test do

@@ -113,6 +113,14 @@ ul.generic li {
   font-size: $p-size;
   margin: 1rem 0;
 }
+ul.bullet {
+  margin-left: 1rem;
+}
+ul.bullet li {
+  font-size: $p-size;
+  margin: 1rem 0;
+  list-style-type: disc;
+}
 
 /*
 ###################################################
