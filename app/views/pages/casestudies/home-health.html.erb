@@ -1,14 +1,12 @@
+<!-- frontmatter -->
 <% content_for :meta_title, "Case Studies • #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, "Workpath has unlocked operational efficiencies that allow home health organizations to optimize labor utilization and increase patient volumes." %>
+<% content_for :body_class, "casestudy" %>
 
-<section class="breakout bgcolor-midcentury margin-bottom-large">
-  <div class="columns margin-y-xlarge fade-in">
-    <div class="column column--66 column--center-children">
-      <p class="large color-quartz">Use Cases</p>
-      <h4 class="color-fog display">Workpath for Home Health</h4>
-    </div>
-  </div>
-</section>
+<!-- hero -->
+<%= react_component("Hero", {superhead: "Case Study", headline: "Workpath for Telemedicine"}) %>
+
+<!-- main content -->
 
 <div class="columns">
 
@@ -21,7 +19,8 @@
 
     <p>Home health organizations have robust teams of healthcare providers capable of performing various services in the patient home. What home health organizations lack is an effective, automated way to manage the capabilities of their team members and ensure that the ‘best match’ is servicing every patient.</p>
 
-<p>With Workpath, home health organizations no longer need to rely on robust spreadsheets to manage their team’s capabilities. They can build out user profiles, create Tags to manage service capabilities, credentials and professional licenses and even manage when those licenses expire. The scheduling team can then rely on Workpath’s intelligence to find the ‘best match’ for every patient, whether that’s based on technical capabilities, licenses, location proximity, availability, or another business rule. Workpath has unlocked operational efficiencies that allow home health organizations to optimize labor utilization and increase patient volumes.</p>
+    <p>With Workpath, home health organizations no longer need to rely on robust spreadsheets to manage their team’s capabilities. They can build out user profiles, create Tags to manage service capabilities, credentials and professional licenses and even manage when those licenses expire. The scheduling team can then rely on Workpath’s intelligence to find the ‘best match’ for every patient, whether that’s based on technical capabilities, licenses, location proximity, availability, or another business rule. Workpath has unlocked operational efficiencies that allow home health organizations to optimize labor utilization and increase patient volumes.</p>
+    
   </div>
 </div>
 

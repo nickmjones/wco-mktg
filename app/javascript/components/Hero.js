@@ -1,33 +1,18 @@
 import React, { Component } from "react";
 
-class Hero extends Component {
+export default class Hero extends Component {
 
   render() {
-    if (this.props.image != null) {
-      return (
-        <header className="hero fade-in">
-          <div className="caption">
-            <p className="large color-quartz">{this.props.section}</p>
-            <h3>{this.props.headline}</h3>
-            <h5>{this.props.subhed}</h5>
+    return (
+      <section class="breakout margin-bottom-large">
+        <div class="columns margin-y-xlarge">
+          <div class="column column--center-children align-center">
+            <p class="large color-quartz">{this.props.superhead}</p>
+            <h4 class="display color-admiral">{this.props.headline}</h4>
           </div>
-          <div className="image">
-            <img src={this.props.img_src} />
-          </div>
-        </header>
-      );
-    } else {
-      return (
-        <header className="hero fade-in">
-          <div className="caption">
-            <p className="large color-quartz">{this.props.section}</p>
-            <h3>{this.props.headline}</h3>
-            <h5>{this.props.subhed}</h5>
-          </div>
-        </header>
-      );
-    }
+        </div>
+      </section>
+    );
   }
-}
 
-export default Hero;
+}

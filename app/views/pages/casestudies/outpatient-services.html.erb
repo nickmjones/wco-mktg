@@ -1,14 +1,12 @@
+<!-- frontmatter -->
 <% content_for :meta_title, "Case Studies • #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, "Memorial Sloan Kettering Cancer Center improved patient experience by implementing at-home phlebotomy appointments." %>
+<% content_for :body_class, "casestudy" %>
 
-<section class="breakout bgcolor-midcentury margin-bottom-large">
-  <div class="columns margin-y-xlarge fade-in">
-    <div class="column column--66 column--center-children">
-      <p class="large color-quartz">Case Studies</p>
-      <h4 class="color-fog display">Workpath for Outpatient Services</h4>
-    </div>
-  </div>
-</section>
+<!-- hero -->
+<%= react_component("Hero", {superhead: "Case Study", headline: "Workpath for Outpatient Services"}) %>
+
+<!-- main content -->
 
 <div class="columns">
 

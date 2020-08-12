@@ -1,14 +1,18 @@
+<!-- frontmatter -->
 <% content_for :meta_title, "Case Studies • #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, "Clinical research organizations using Workpath have achieved improved compliance, increased recruitment, and better patient retention." %>
+<% content_for :body_class, "casestudy" %>
 
-<section class="breakout bgcolor-midcentury margin-bottom-large">
-  <div class="columns margin-y-xlarge fade-in">
-    <div class="column column--66 column--center-children">
-      <p class="large color-quartz">Use Cases</p>
-      <h4 class="color-fog display">Workpath for Remote Clinical Trials</h4>
-    </div>
-  </div>
-</section>
+<!-- hero -->
+<%= react_component(
+  "Hero", 
+  {
+    superhead: "Case Study", 
+    headline: "Workpath for Clinical Trials"
+  }) 
+%>
+
+<!-- main content -->
 
 <div class="columns">
 

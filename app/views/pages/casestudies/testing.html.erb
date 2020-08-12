@@ -1,14 +1,12 @@
+<!-- frontmatter -->
 <% content_for :meta_title, "Case Studies • #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, "A major on-demand drug testing company leverages Workpath to halve collector response times." %>
+<% content_for :body_class, "casestudy" %>
 
-<section class="breakout bgcolor-midcentury margin-bottom-large">
-  <div class="columns margin-y-xlarge fade-in">
-    <div class="column column--66 column--center-children">
-      <p class="large color-quartz">Use Cases</p>
-      <h4 class="color-fog display">Workpath for Home Health</h4>
-    </div>
-  </div>
-</section>
+<!-- hero -->
+<%= react_component("Hero", {superhead: "Case Study", headline: "Workpath for Home Health"}) %>
+
+<!-- main content -->
 
 <div class="columns">
 
