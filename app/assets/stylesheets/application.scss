@@ -516,7 +516,7 @@ input[type="email"],
 input[type="password"],
 input[type="tel"] {
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: .5rem;
   width: 100%;
   border-radius: 3px;
   border: 2px solid transparent;
@@ -570,5 +570,49 @@ label {
 */
 
 .casestudy {
-  background: color(midcentury);
+  background: color(fog);
+}
+
+.stats {
+  display: flex;
+  width: 80%;
+  margin: 0 auto 4rem;
+  flex-direction: column;
+  @include respond-to(md) {
+    flex-direction: row;
+  }
+}
+dl.stat {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+
+  dt {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 12rem;
+    height: 12rem;
+    line-height: 11rem;
+    border-radius: 1000px;
+    background: color(belaire);
+    mix-blend-mode: multiply;
+  }
+  dd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    background: color(midcentury);
+    mix-blend-mode: multiply;
+    border-radius: 1000px;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    margin-top: -3rem;
+  }
 }
