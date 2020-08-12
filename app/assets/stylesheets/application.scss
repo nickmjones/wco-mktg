@@ -505,11 +505,16 @@ footer a {
   input {
     display: block;
   }
+
+  input[type="submit"] {
+    @extend .btn;
+  }
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="tel"] {
   font-size: 1.2rem;
   padding: 1rem;
   width: 100%;
