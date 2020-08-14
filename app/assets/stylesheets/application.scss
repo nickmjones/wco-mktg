@@ -1,4 +1,4 @@
-@import "./reset.css";
+@import "./base/reset.css";
 @import "./base/base";
 @import "./modules/overlay.scss";
 @import "./modules/navigation.scss";
@@ -8,28 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700');
 
 @font-face {
-    font-family: 'Circular Std';
-    src: url('/assets/CircularSpotifyText-Light.woff2') format('woff2'),
-        url('/assets/CircularSpotifyText-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Circular Std Book';
     src: url('/assets/CircularStd-Book.woff2') format('woff2'),
         url('/assets/CircularStd-Book.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Circular Std';
-    src: url('/assets/CircularStd-Bold.woff2') format('woff2'),
-        url('/assets/CircularStd-Bold.woff') format('woff');
-    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
