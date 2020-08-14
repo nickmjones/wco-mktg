@@ -9,8 +9,7 @@
 
 @font-face {
     font-family: 'Circular Std Book';
-    src: url('/assets/CircularStd-Book.woff2') format('woff2'),
-        url('/assets/CircularStd-Book.woff') format('woff');
+    src: asset-url('/assets/CircularStd-Book.woff2') format('woff2'), asset-url('/assets/CircularStd-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
