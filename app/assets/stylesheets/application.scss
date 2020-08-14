@@ -5,15 +5,7 @@
 @import "./modules/button.scss";
 @import "./modules/interstitial.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700');
-
-@font-face {
-    font-family: 'Circular Std Book';
-    src: asset-url('/assets/CircularStd-Book.woff2') format('woff2'), asset-url('/assets/CircularStd-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Merriweather:wght@400;700&display=swap');
 
 @keyframes fadein {
   0% {
@@ -426,11 +418,12 @@ article.blogpost {
     margin: 2rem 0;
   }
 }
-
+footer * {
+  color: darken(#b0e0e6, 40%);
+}
 footer a {
   text-decoration: none;
-  color: color(coal);
-  border: 0;
+  border: 0
 }
 
 .tag {
@@ -513,6 +506,7 @@ footer a {
   background: color(darkfog);
   padding: 3rem;
   border-radius: .5rem;
+  width: 100%;
 
   input {
     display: block;
@@ -527,7 +521,7 @@ input[type="tel"] {
   padding: .5rem;
   width: 100%;
   border-radius: 3px;
-  border: 2px solid transparent;
+  border: 1px solid color(hull);
   transition: all .1s ease-in-out;
   
   &:not(:last-child) {
@@ -536,7 +530,7 @@ input[type="tel"] {
 
   &:focus {
     outline: 0;
-    border: 2px solid color(scrub);
+    border: 1px solid color(scrub);
   }
 }
 select {
@@ -551,7 +545,7 @@ select {
 	box-sizing: border-box;
 	margin: 0;
   border-radius: 3px;
-  border: 0;
+  border: 1px solid color(hull);
   background-image: url('select.svg');
   background-repeat: no-repeat;
   background-position: center right;
