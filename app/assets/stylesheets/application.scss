@@ -3,8 +3,36 @@
 @import "./modules/overlay.scss";
 @import "./modules/navigation.scss";
 @import "./modules/button.scss";
+@import "./modules/interstitial.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700');
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('/assets/CircularSpotifyText-Light.woff2') format('woff2'),
+        url('/assets/CircularSpotifyText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('/assets/CircularStd-Book.woff2') format('woff2'),
+        url('/assets/CircularStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('/assets/CircularStd-Bold.woff2') format('woff2'),
+        url('/assets/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 @keyframes fadein {
   0% {
@@ -62,6 +90,7 @@ p {
   color: #444;
   font-size: 1rem;
   line-height: 1.5;
+  margin-bottom: .5rem;
 
   &.small {
     font-size: 0.9375rem;
@@ -144,8 +173,9 @@ body * {
 }
 
 a {
-  color: color(hyperlink);
+  color: color(coal);
   text-decoration: none;
+  border-bottom: 2px solid color(scrub);
 }
 
 /*
@@ -157,6 +187,7 @@ a {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding-top: 6rem;
   & * {
     grid-column: 1 / 13;
   }
@@ -343,7 +374,7 @@ img.responsive-limit {
   animation-fill-mode: backwards;
 }
 
-figure p + p {
+figure p {
   margin: 0;
 }
 
@@ -504,10 +535,6 @@ footer a {
 
   input {
     display: block;
-  }
-
-  input[type="submit"] {
-    @extend .btn;
   }
 }
 

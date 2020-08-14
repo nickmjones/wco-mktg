@@ -6,7 +6,8 @@ export default class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAtPageTop: true,
+      isMenuOpen: false,
+      triggerAtTop: false
     };
   }
 
@@ -17,20 +18,18 @@ export default class Navigation extends Component {
   };
 
   handleScroll = () => {
-    if (window.pageYOffset < 64) {
-      this.setState({ isAtPageTop: true });
+    if ( window.pageYOffset > 100 ) {
+      this.setState({ triggerAtTop: false });
     } else {
-      this.setState({ isAtPageTop: false });
+      this.setState({ triggerAtTop: true });
     }
-  };
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
   }
+
 
   render() {
     return (
-      <>
+      <div className={this.state.menuAtTop ? 'navWrapper' : 'navWrapper navWrapper--stuck' }>
+
         <div className="banner">
           <a href="https://try.workpath.co/comp-free-lp" target="_blank">Workpath is now free for small teams &rarr;</a>
         </div>
@@ -61,7 +60,8 @@ export default class Navigation extends Component {
             <a href="/demo">Get a Demo</a>
           </li>
         </ul>
-      </>
+        
+      </div>
     );
   }
 }

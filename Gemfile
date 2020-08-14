@@ -9,12 +9,12 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'react-rails', '~> 2.6'
-gem 'sass-rails', '>= 6'
+gem 'sassc', '~> 2.4'
 gem 'turbolinks', '~> 5'
 gem 'simple_form'
 gem 'webpacker', '~> 4.0'
 gem 'high_voltage'
-
+gem 'intercom-rails', '~> 0.4.1'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

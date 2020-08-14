@@ -1,0 +1,32 @@
+.interstitial {
+  background: color(fog);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 0 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 30px rgba(0,0,0,0.1);
+  min-height: 580px;
+
+  @include respond-to(md) {
+    flex-direction: row;
+    max-width: 980px;
+    margin: 0 auto 4rem;
+  }
+
+  &__panel {
+    background-color: color(scrub);
+    background-image: url('dude.png');
+    background-position: 4rem bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    flex: 1;
+  }
+  &__form {
+    background: white;
+    padding: 2rem;
+    flex: 3;
+  }
+}

@@ -41,9 +41,9 @@
   }
 
   li a {
-    text-decoration: none;
     color: color(coal);
-    border-bottom: 2px solid color(coal);
+    text-decoration: none;
+    border-bottom: 2px solid color(scrub);
   }
 }
 
@@ -66,15 +66,17 @@
 }
 
 .menutrigger {
-  position: absolute;
-  top: 5.8rem;
+  position: fixed;
+  top: 5.4rem;
   right: 1.25rem;
   z-index: 99;
   pointer-events: all;
   font-size: 2rem;
+  color: color(coal);
   cursor: pointer;
   width: 24px;
   height: 24px;
+
 
   .bar {
     width: 24px;
@@ -82,6 +84,7 @@
     background: color(coal);
     transition: 0.2s;
     position: absolute;
+    box-shadow: 0 1px 1px rgba(255,255,255,0.4);
     &--top {
       top: 0;
       left: 0;
