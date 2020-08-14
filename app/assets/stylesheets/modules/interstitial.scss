@@ -7,7 +7,6 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 30px rgba(0,0,0,0.1);
-  min-height: 580px;
 
   @include respond-to(md) {
     flex-direction: row;
@@ -21,6 +20,7 @@
     background-position: 4rem bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    background-blend-mode: screen;
     padding: 2rem;
     flex: 1;
   }
