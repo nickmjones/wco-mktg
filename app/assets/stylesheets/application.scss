@@ -499,11 +499,11 @@ footer a {
   background-position: "0 -1rem";
 
   &--nav {
-    background-image: url('nav_photo.png');
+    background-image: image-url("nav_photo.png");
   }
 
   &--company {
-    background-image: url('office_photo.png');
+    background-image: image-url("office_photo.png");
   }
 }
 
