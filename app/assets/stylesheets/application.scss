@@ -494,10 +494,17 @@ footer a {
 }
 
 .roadblock {
-  background-image: url('nav_photo.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: "0 -1rem";
+
+  &--nav {
+    background-image: url('nav_photo.png');
+  }
+
+  &--company {
+    background-image: url('office_photo.png');
+  }
 }
 
 // Form setup

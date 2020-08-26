@@ -34,14 +34,16 @@
   </div>
 </div>
 
-<div class="columns margin-y-xlarge">
-  <div class="column column--66">
-    <h5>
-      We're purpose driven. We come to the table with a set of <span class="color-quartz"> core values</span> that drive
+<section class="breakout margin-medium padding-y-xxxlarge roadblock--company">
+  <div class="columns">
+    <div class="column column--50">
+      <h5 class="color-fog display">
+        We're purpose driven. We come to the table with a set of <span class="color-quartz"> core values</span> that drive
       everything we do. Our software enables mobile healthcare services to schedule or dispatch on-demand the right professional to perform the right care at the right time and place.
-    </h5>
+      </h5>
+    </div>
   </div>
-</div>
+</section>
 
 <div class="columns columns--wrap margin-bottom-large">
   <div class="column column--50 margin-bottom-small">
@@ -101,75 +103,33 @@
   </div>
 </div>
 
-<div class="columns columns--center-items columns--wrap margifigure-xlarge">
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/eddie.png", class: "avatar" %>
-    <p>Eddie Peloke</p>
-    <p class="small color-quartz">CEO</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/annie.png", class: "avatar" %>
-    <p>Annie Medina</p>
-    <p class="small color-quartz">Product Manager</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/hunter.png", class: "avatar" %>
-    <p>Hunter Byrnes</p>
-    <p class="small color-quartz">Business Development</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag src="team/luke.png", class: "avatar" %>
-    <p>Luke Atwood</p>
-    <p class="small color-quartz">Business Development</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/mitchell.png", class: "avatar" %>
-    <p>Mitchell Murray</p>
-    <p class="small color-quartz">Business Development</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/andrea.png", class: "avatar" %>
-    <p>Andrea Hoover</p>
-    <p class="small color-quartz">Account Manager</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/nick.png", class: "avatar" %>
-    <p>Nick Jones</p>
-    <p class="small color-quartz">UI/UX</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/ryan.png", class: "avatar" %>
-    <p>Ryan Stimmler</p>
-    <p class="small color-quartz">Developer</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/jeremy.png", class: "avatar" %>
-    <p>Jeremy Remington</p>
-    <p class="small color-quartz">IT Infrastructure Specialist</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/elliott.png", class: "avatar" %>
-    <p>Elliott Pogue</p>
-    <p class="small color-quartz">Developer</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/louie.png", class: "avatar" %>
-    <p>Louie Cheung</p>
-    <p class="small color-quartz">Developer</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/justin.png", class: "avatar" %>
-    <p>Justin Rutherford</p>
-    <p class="small color-quartz">Developer</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/emily.png", class: "avatar" %>
-    <p>Emily Murphy</p>
-    <p class="small color-quartz">Developer</p>
-  </figure>
-  <figure class="column column--33 align-center padding-bottom-medium">
-    <%=image_tag "team/ashley.png", class: "avatar" %>
-    <p>Ashley Wilson</p>
-    <p class="small color-quartz">Developer</p>
-  </figure>
+<div class="columns columns--center-items columns--wrap">
+
+  <%= react_component("BioCard", { image: "/assets/team/eddie.png", name: "Eddie Peloke", title: "CEO", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/annie.png", name: "Annie Medina", title: "Product Manager", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/hunter.png", name: "Hunter Byrnes", title: "Business Development", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/luke.png", name: "Luke Atwood", title: "Business Development", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/mitchell.png", name: "Mitchell Murray", title: "Business Development", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/andrea.png", name: "Andrea Hoover", title: "Account Manager", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/nick.png", name: "Nick Jones", title: "Product Design", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/ryan.png", name: "Ryan Stimmler", title: "Developer", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/jeremy.png", name: "Jeremy Remington", title: "IT Infrastructure Specialist", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/elliott.png", name: "Elliott Pogue", title: "Developer", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/louie.png", name: "Louie Cheung", title: "Developer", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/justin.png", name: "Justin Rutherford", title: "Developer", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/emily.png", name: "Emily Murphy", title: "Developer", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
+
+  <%= react_component("BioCard", { image: "/assets/team/ashley.png", name: "Ashley Wilson", title: "Developer", shortbio: "Officia esse sit aliqua Lorem eu fugiat nulla amet. Eiusmod elit laboris nisi sint. Amet aliquip officia anim anim irure ad irure ullamco est do. Adipisicing enim sunt anim aute aute quis. Id officia elit in sit sint reprehenderit irure adipisicing velit et labore nisi. Commodo consectetur sunt non aliqua labore labore occaecat id dolore. Eiusmod nisi nostrud consequat ipsum cillum exercitation." }) %>
 </div>
