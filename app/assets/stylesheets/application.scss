@@ -509,6 +509,7 @@ footer a {
 
   &--company {
     background-image: image-url("office_photo.png");
+    background-repeat: no-repeat;
     min-height: 50vh;
     display: flex;
     align-items: center;
