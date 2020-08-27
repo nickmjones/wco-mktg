@@ -27,11 +27,12 @@
 .biobox {
   background: #fff;
   border-radius: 12px;
-  padding: 2rem;
   width: 90vw;
   box-shadow: 0 0 60px rgba(0,0,0,0.3);
   transition: all .4s ease-in-out;
   position: relative;
+  display: flex;
+  overflow: hidden;
 
   @include respond-to(md) {
     width: 60vw;
@@ -52,6 +53,30 @@
     font-size: 2rem;
     color: darken(color(fog), 20%);
     cursor: default;
+  }
+
+  .image {
+    width: 230px;
+    height: 100%;
+    overflow: hidden;
+    background: color(scrub);
+
+    img {
+      object-fit: cover;
+      min-width: 230px;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      opacity: 0.5;
+      mix-blend-mode: multiply;
+      display: block;
+    }
+  }
+  .content {
+    flex: 4;
+    padding: 2rem;
   }
 
 }
