@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../assets/stylesheets/modules/biopop.scss";
 
 export default class Biopop extends Component {
 
