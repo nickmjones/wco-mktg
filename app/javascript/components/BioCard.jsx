@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import lilogo from "images/linkedin.svg";
 
 export default class Biopop extends Component {
 
@@ -34,11 +35,11 @@ export default class Biopop extends Component {
 
     return (
       <>
-        <figure className="column column--33 align-center padding-bottom-medium">
+        <figure className="column column--33 align-center padding-bottom-medium biocard">
           <img src={require(`images/${this.props.image}.png`)} className="avatar" onClick={this.setBioFrameVisibility} />
           
           <p>{this.props.name}</p>
-          <p className="small color-quartz">{this.props.title}</p>
+          <p className="xsmall color-quartz">{this.props.title}</p>
         </figure>
 
         <div className={
@@ -65,9 +66,10 @@ export default class Biopop extends Component {
             <div className="content">
               <h5>{this.props.name}</h5>
               <p className="large color-quartz">{this.props.title}</p>
-              <p>
+              <p className="break">
                 {this.props.shortbio}
               </p>
+              {this.props.linkedin ? <span className="linkedinlogo"><a href={this.props.linkedin}><img src={lilogo} /></a></span> : null}
             </div>
           </div>
         </div>

@@ -1,5 +1,18 @@
 @import "../base/base.scss";
 
+.linkedinlogo {
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+    border: 0;
+  }
+}
+
+.break {
+  white-space: pre-line;
+}
+
 .bioframe {
   position: fixed;
   display: flex;
@@ -68,13 +81,13 @@
 
     img {
       object-fit: cover;
-      min-width: 230px;
+      min-width: 100%;
       min-height: 100%;
-      width: auto;
+      width: 100%;
       height: auto;
       -webkit-filter: grayscale(1);
       filter: grayscale(1);
-      opacity: 0.5;
+      opacity: 0.3;
       mix-blend-mode: multiply;
       display: block;
     }
