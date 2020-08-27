@@ -56,10 +56,15 @@
   }
 
   .image {
-    width: 230px;
-    height: 100%;
-    overflow: hidden;
-    background: color(scrub);
+    display: none;
+
+    @include respond-to(md) {
+      display: block;
+      width: 230px;
+      height: 100%;
+      overflow: hidden;
+      background: color(scrub);
+    }
 
     img {
       object-fit: cover;
