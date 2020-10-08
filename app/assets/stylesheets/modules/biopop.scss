@@ -24,8 +24,8 @@
   width: 100%;
   height: 100%;
   z-index: 999;
-  transition: all .3s ease-in-out;
-  background-color: rgba(255,255,255,0.8);
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.8);
 
   &--closed {
     opacity: 0;
@@ -41,8 +41,8 @@
   background: #fff;
   border-radius: 12px;
   width: 90vw;
-  box-shadow: 0 0 60px rgba(0,0,0,0.3);
-  transition: all .4s ease-in-out;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -61,10 +61,10 @@
   .bioboxClose {
     text-transform: uppercase;
     position: absolute;
-    top: .35rem;
+    top: 0.35rem;
     right: 1rem;
     font-size: 2rem;
-    color: darken(color(fog), 20%);
+    color: color(hull);
     cursor: default;
   }
 
@@ -96,5 +96,4 @@
     flex: 4;
     padding: 2rem;
   }
-
 }

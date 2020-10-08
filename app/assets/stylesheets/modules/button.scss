@@ -2,18 +2,17 @@
 
 .btn,
 input[type="submit"] {
-  background: color(coal);
+  background: color(k);
   border-radius: 100px;
   text-align: center;
   color: color(fog);
   font-size: 1rem;
   line-height: 1;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border: 1px solid transparent;
-  @include animate(.15s, ease-in-out);
+  @include animate(0.15s, ease-in-out);
   display: inline-block;
   margin: 1rem 1rem 0 0;
-  text-transform: uppercase;
 
   &:hover {
     background: #111;
@@ -21,12 +20,12 @@ input[type="submit"] {
 
   &--ghost {
     background: white;
-    color: color(coal);
-    border: 1px solid color(coal);
-    
+    color: color(k);
+    border: 1px solid color(k);
+
     &:hover {
       background: color(fog);
-      color: color(coal);
+      color: color(k);
     }
   }
 
@@ -34,12 +33,11 @@ input[type="submit"] {
     background: white;
     color: color(sky);
     border: 1px solid white;
-    padding: .75rem 0;
-    
+    padding: 0.75rem 0;
+
     &:hover {
       background: white;
-      color: color(coal);
+      color: color(k);
     }
   }
 }
-
