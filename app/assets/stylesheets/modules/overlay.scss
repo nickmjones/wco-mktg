@@ -41,7 +41,7 @@
   }
 
   li a {
-    color: color(coal);
+    color: color(k);
     text-decoration: none;
     border-bottom: 2px solid color(scrub);
   }
@@ -72,7 +72,7 @@
   z-index: 99;
   pointer-events: all;
   font-size: 2rem;
-  color: color(coal);
+  color: color(k);
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -81,7 +81,7 @@
   .bar {
     width: 24px;
     height: 3px;
-    background: color(coal);
+    background: color(k);
     transition: 0.2s;
     position: absolute;
     box-shadow: 0 1px 1px rgba(255,255,255,0.4);
