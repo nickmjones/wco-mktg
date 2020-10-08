@@ -1,0 +1,25 @@
+.marketplace-hero {
+  background: color(scrub) url("marketplace_hero.png") bottom right no-repeat;
+  background-size: contain;
+  margin-top: -4rem;
+  padding-top: 10rem;
+}
+
+.marketplace-integrations {
+  @include respond-to(md) {
+    background: color(pelham) url("marketplace_screenshots.svg") center right
+      no-repeat;
+    background-size: contain;
+  }
+}
+
+.marketplace-cards {
+  width: 100%;
+  padding-bottom: 4rem;
+
+  img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+  }
+}
