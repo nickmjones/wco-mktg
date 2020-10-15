@@ -8,9 +8,18 @@
 
 .marketplace-integrations {
   @include respond-to(md) {
-    background: color(pelham) image-url("marketplace_screenshots.svg") center
-      right no-repeat;
+    background: color(hull);
     background-size: contain;
+    padding: 8rem 0 4rem 8rem;
+  }
+}
+
+.marketplace-image {
+  padding: 0 !important;
+
+  img {
+    display: block !important;
+    width: 100%;
   }
 }
 
