@@ -30,10 +30,6 @@ export default class Navigation extends Component {
     return (
       <div className={this.state.menuAtTop ? 'navWrapper' : 'navWrapper navWrapper--stuck' }>
 
-        <div className="banner">
-          <a href="https://try.workpath.co/comp-free-lp" target="_blank">Workpath is now free for small teams &rarr;</a>
-        </div>
-
         <ul className="navigation" role="navigation" aria-label="Main Navigation">
           <li className="navigationLogo">
             <a href="/">
