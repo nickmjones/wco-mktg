@@ -16,6 +16,7 @@ gem 'turbo-rails'
 gem 'hotwire-rails'
 # gem 'cancancan'
 gem 'bootsnap', '>= 1.4.4', require: false  
+gem 'net-smtp', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
