@@ -15,6 +15,7 @@ gem 'simple_form'
 gem 'webpacker', '~> 4.0'
 gem 'high_voltage'
 gem 'intercom-rails', '~> 0.4.1'
+gem 'net-smtp', require: false
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
