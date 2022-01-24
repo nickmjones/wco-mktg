@@ -14,6 +14,7 @@ gem 'stimulus-rails'
 gem 'better_errors'
 gem 'turbo-rails'
 gem 'hotwire-rails'
+gem 'high_voltage'
 # gem 'cancancan'
 gem 'bootsnap', '>= 1.4.4', require: false  
 gem 'net-smtp', require: false
