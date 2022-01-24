@@ -17,6 +17,7 @@ gem 'hotwire-rails'
 gem 'high_voltage'
 gem 'intercom-rails'
 gem 'simple_form'
+gem 'react-rails'
 # gem 'cancancan'
 gem 'bootsnap', '>= 1.4.4', require: false  
 gem 'net-smtp', require: false
