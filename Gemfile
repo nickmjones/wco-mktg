@@ -20,6 +20,7 @@ gem 'simple_form'
 # gem 'cancancan'
 gem 'bootsnap', '>= 1.4.4', require: false  
 gem 'net-smtp', require: false
+gem 'net-pop', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
